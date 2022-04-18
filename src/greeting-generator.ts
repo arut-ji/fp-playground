@@ -1,3 +1,3 @@
 export interface GreetingWordGenerator {
-  getWord(): Promise<string>
+  getWord(): Promise<string>;
 }
