@@ -1,0 +1,20 @@
+version: 2
+updates:
+  # Keep npm dependencies up to date
+  - package-ecosystem: "npm"
+    directory: "/"
+    target-branch: "dependencies-update"
+    schedule:
+      interval: "daily"
+      time: "08:00"
+      timezone: "Europe/Berlin"
+    commit-message:
+      prefix: "[dependency]"
+  # Keep GHA version up to date
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    target-branch: "dependencies-update"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "[actions]"
