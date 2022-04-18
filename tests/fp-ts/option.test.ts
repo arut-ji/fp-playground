@@ -1,6 +1,6 @@
 import * as O from 'fp-ts/Option';
 import { getPort } from '../../src/fp-ts/option';
-import { Config } from '../../src/purify-ts/shared';
+import { Config } from '../../src/shared/model';
 
 describe('getPort', () => {
   it('should return a correct port from config', () => {

@@ -4,7 +4,7 @@ import {
   Config,
   ConfigLoadError,
   SourceNotFound
-} from '../../src/purify-ts/shared';
+} from '../../src/shared/model';
 
 describe('getPort', () => {
   it('should return a correct port from config', () => {

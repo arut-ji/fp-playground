@@ -1,6 +1,6 @@
 import { Maybe, MaybeAsync } from 'purify-ts';
 import { getPort, getPortAsync } from '../../src/purify-ts/maybe';
-import { Config } from '../../src/purify-ts/shared';
+import { Config } from '../../src/shared/model';
 
 describe('getPort', () => {
   it('should return a correct port from config', () => {
