@@ -1,9 +1,5 @@
 import { Maybe, MaybeAsync } from 'purify-ts';
-
-export type Config = {
-  host: string;
-  port: string;
-};
+import { Config } from './shared';
 
 export const getPort = (fromConfig: () => Maybe<Config>): number =>
   fromConfig()
